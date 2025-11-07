@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.8)
+}
+.container{
+    height: 17rem;
+    width: 17rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    color: white;
+    position: relative;
+    bottom: 100px;
+}
+span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;    
+}
