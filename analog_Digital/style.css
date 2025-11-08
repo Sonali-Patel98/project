@@ -18,9 +18,15 @@ body{
     position: relative;
     bottom: 100px;
 }
-span{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform-origin: 0 0;    
+.container span {
+  position: absolute;
+  transform: rotate(calc(30deg * var(--i)));
+  
+  inset: 12px;
+  text-align: center;
+} 
+.container span b{
+    transform:rotate(calc(-30deg *var(--i)));
+    display: inline-block;
+
 }
