@@ -65,7 +65,7 @@ body{
     right: 131px;
     height: 2rem;
     width: 2px;
-    border: 2px solid yellow;
+    border: 2px solid yellowgreen;
 }
 .hr, .min, .sec {
   position: absolute;
