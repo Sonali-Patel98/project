@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.8)
+}
+.container{
+    height: 17rem;
+    width: 17rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    color: white;
+    position: relative;
+    bottom: 100px;
+}
+
+
+/* main part of 1-12 to make in center */
+.container span {
+  position: absolute;
+  transform: rotate(calc(30deg * var(--i)));
+  inset: 12px;
+  text-align: center;
+} 
+.container span b{
+    transform:rotate(calc(-30deg *var(--i)));
+    display: inline-block;
+}
+
+/* above main part of making center */ 
+
+.dot{
+    position: absolute;
+    top: 120px;
+    right: 130px;
+    height:5px;
+     width:5px;
+    border:2px solid white;
+    border-radius: 50%;
+}
+.hr{
+    position: absolute;
+    top:60px;
+    right: 131px;
+    height: 4rem;
+    width: 2px;
+    border: 2px solid white;
+}
+.min{
+    position: absolute;
+    top:72px;
+    right: 131px;
+    height: 3rem;
+    width: 2px;
+    border: 2px solid blue;
+}
+.sec{
+    position: absolute;
+    top:88px;
+    right: 131px;
+    height: 2rem;
+    width: 2px;
+    border: 2px solid yellowgreen;
+}
+.hr, .min, .sec {
+  position: absolute;
+  right: 132px;
+  transform-origin: bottom center; /* ✅ This line is important */
+  border-radius: 6px;
+}
